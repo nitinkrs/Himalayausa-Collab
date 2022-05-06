@@ -1,1 +1,25 @@
-
+.row1 {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+#A1 {
+    color: aqua;
+    font-size: 500px;
+}
+#A2 {
+    color: rgb(27, 148, 88);
+    font-size: 500px;
+}
+#A3 {
+    color: rgb(230, 136, 22);
+    font-size: 500px;
+}
+#A4 {
+    color: rgb(255, 0, 0);
+    font-size: 500px;
+}
+#B1 {
+    color: rgb(72, 21, 222);
+    font-size: 40px;
+}
