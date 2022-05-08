@@ -259,16 +259,16 @@ h:hover{
                 <h3>First Name *</h3>
                 <h3>* Required Fields</h3>
             </div>
-            <form id="form">
-                <input type="text" placeholder="Enter First Name" id="name">
+            <form id="form" onsubmit=register(event)>
+                <input type="text" placeholder="Enter First Name" id="name" >
                 <h3>Last Name *</h3>
                 <input type="text" placeholder="Enter Last Name" id="lastname">
                 <h3>E-mail *</h3>
-                <input type="email" placeholder="Enter E-mail" id="email">
+                <input type="email" placeholder="Enter E-mail" id="email1" >
                 <h3>Password *</h3>
-                <input type="password" placeholder="Enter Password" id="password">
+                <input type="password" placeholder="Enter Password" id="password" >
                 <!-- <a href="sign in.html"><input id="submit" type="submit" value="CREATE" name="submit"  ></a> -->
-                <button id="creat"><a href="">CREATE</a></button>
+                <button id="creat" type="submit">CREATE</button>
                 <h4>or Return to Store</h4>
             </form>
         </div>
@@ -329,3 +329,26 @@ h:hover{
 
 </body>
 </html>
+<script>
+    var signupData=JSON.parse(localStorage.getItem("signup")) || []
+    function register(event){
+        event.preventDefault()
+        var firstName=document.getElementById("name").value;
+        var lastName=document.getElementById("lastname").value;
+        var mail=document.getElementById("email1").value;
+        var pass=document.getElementById("password").value;
+        if(firstName != "" && lastName != "" && mail != "" && pass != ""){
+          
+            var obj={ 
+                firstName:firstName,
+                lastName:lastName,
+                mail:mail,
+                password:pass,
+            }
+            signupData.push(obj)
+            localStorage.setItem("signup",JSON.stringify(signupData));
+            window.location.href="/himalyausa.html"
+        }
+       
+    }
+</script>
