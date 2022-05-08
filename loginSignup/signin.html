@@ -238,6 +238,14 @@ h:hover{
     color: #66765f;
     padding-left: 20px;
 }
+#error{
+    color: red;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+
     </style>
 </head>
 <body>
@@ -281,6 +289,7 @@ h:hover{
                 <input type="email" placeholder="Enter E-mail" id="email1">
                 <h3>Password *</h3>
                 <input type="password" placeholder="Enter Password" id="password">
+                <div id="error"></div>
                 <!-- <input id="submit" type="submit" value="Login" name="submit" > -->
                 <button id="creat1">Login</button>
             
@@ -359,12 +368,18 @@ h:hover{
         var userMail=document.getElementById("email1").value;
         var userPass=document.getElementById("password").value;
         var userData=JSON.parse(localStorage.getItem("signup"))
+
         if(userData.length > 0){
             for(var i=0;i<userData.length;i++){
                 if(userData[i].mail === userMail && userData[i].password === userPass){
                     window.location.href="../about page/checking/1.html"
                 }
+                else if(i===userData.length-1){
+                   var errorDiv= document.getElementById("error")
+                   errorDiv.innerHTML="Either Email OR Password is Incorrect"
+                }
             }
+
         }
 
     }
