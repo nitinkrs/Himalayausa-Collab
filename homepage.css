@@ -111,7 +111,12 @@ ul {
   }
   
   li a abc1:hover {
-    background-color: rgb(174, 156, 156)
+    background-color: rgb(188, 203, 184)
+    
+  }
+
+  Shop about:hover {
+    background-color: rgb(188, 203, 184)
     
   }
 /* navbar end */
@@ -397,7 +402,7 @@ a{
 }
 
 #tdmark1 {
-    font-size: 22px;
+    font-size: 18px;
     color: #636c60;
     margin-left: 130px;
     margin-top: -220px;
@@ -407,37 +412,37 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    color: #79797e;
-    font-size: 25px;
+    color: #4c4c53;
+    font-size: 22px;
 }
 #parg {
-    font-size: 21px;
+    font-size: 16px;
 }
 #parg1 {
-    font-size: 24px;
+    font-size: 19px;
     
 }
 #parg2 {
-    font-size: 22px;
+    font-size: 18px;
     color: #454545;
-    margin-top: -25px;
+    margin-top: -15px;
     
 }
 #parg3 {
-    font-size: 24px;
+    font-size: 18px;
     color: #454545;
-    margin-top: -20px;
+    margin-top: -15px;
     
 }
 #email {
-    font-size: 25px;
+    font-size: 20px;
     
 }
 #tag12{
     color: #889583;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 
 /* footer end */
