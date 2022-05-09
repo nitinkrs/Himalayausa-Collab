@@ -1,0 +1,33 @@
+#total {
+    display:grid;
+    grid-template-columns:repeat(2,1fr) ;
+
+    margin: auto;
+    gap:30px;
+}
+.content {
+    height: 600px;
+    width: 95%;
+    
+}
+#img1 {
+    height: 500px;
+    width: 100%;
+    
+}
+#p1{
+    line-height: 30px;
+    font-size: 20px;
+}
+#p2{
+    line-height: 30px;
+    font-size: 20px;
+}
+#img2 {
+    height:600px;
+    width:100%;
+
+}
+h2 {
+    color:rgb(15, 129, 129);
+}
